@@ -22,7 +22,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     const uiConfig = {
       signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.EmailAuthProvider.PROVIDER_ID
+        firebase.auth.EmailAuthProvider.PROVIDER_ID,
+        firebase.auth.FacebookAuthProvider.PROVIDER_ID
       ],
       callbacks: {
         signInSuccessWithAuthResult: this.onLoginSuccessful.bind(this)
