@@ -1,32 +1,11 @@
-
-<div class="courses-panel">
-
-    <h3>All Courses</h3>
-
-
-    <mat-tab-group>
-
-        <mat-tab label="Beginners">
-
-            <courses-card-list
-                    [courses]="[]">
-
-            </courses-card-list>
-
-        </mat-tab>
-
-        <mat-tab label="Advanced">
-
-            <courses-card-list
-                    [courses]="[]"
-
-            ></courses-card-list>
-
-        </mat-tab>
-
-    </mat-tab-group>
-
-
-
-</div>
-
+<mat-card>
+  <mat-card-title>
+    Token
+  </mat-card-title>
+  <mat-card-content>
+    {{ token }}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="primary" (click)="copy()">Copiar</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,7 +1,9 @@
-
-
 .courses-panel {
-    max-width: 400px;
-    margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
+mat-card-content.mat-card-content {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
