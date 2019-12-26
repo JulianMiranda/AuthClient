@@ -16,9 +16,11 @@ export class HomeComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this._afAuth.authState.subscribe(obj =>
-      obj.getIdToken(true).then(idToken => (this.token = idToken))
-    );
+    this._afAuth.authState.subscribe(obj => {
+      if (obj) {
+        obj.getIdToken(true).then(idToken => (this.token = idToken));
+      }
+    });
   }
 
   copy() {
